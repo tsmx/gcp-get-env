@@ -1,0 +1,1 @@
+module.exports.echo = (req, res) => { res.json(process.env); };

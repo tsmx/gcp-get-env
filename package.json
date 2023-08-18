@@ -1,0 +1,32 @@
+{
+  "name": "gcp-get-env",
+  "version": "1.0.0",
+  "description": "Simple retrieving of Google Cloud Platform (GCP) provided default process.env variables in cloud functions (gen1 and gen2) and app engine for Node.js 16, 18 and 20.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "deploy-node16-func": "gcloud functions deploy node16-echo --runtime=nodejs16 --region=europe-west3 --source=./functions/ --entry-point=echo --trigger-http --allow-unauthenticated --docker-registry=artifact-registry",
+    "deploy-node16-func-gen2": "gcloud functions deploy node16-echo-gen2 --gen2 --runtime=nodejs16 --region=europe-west3 --source=./functions/ --entry-point=echo --trigger-http --allow-unauthenticated",
+    "deploy-node18-func": "gcloud functions deploy node18-echo --runtime=nodejs18 --region=europe-west3 --source=./functions/ --entry-point=echo --trigger-http --allow-unauthenticated --docker-registry=artifact-registry",
+    "deploy-node18-func-gen2": "gcloud functions deploy node18-echo-gen2 --gen2 --runtime=nodejs18 --region=europe-west3 --source=./functions/ --entry-point=echo --trigger-http --allow-unauthenticated",
+    "deploy-node20-func": "gcloud functions deploy node20-echo --runtime=nodejs20 --region=europe-west3 --source=./functions/ --entry-point=echo --trigger-http --allow-unauthenticated --docker-registry=artifact-registry",
+    "deploy-node20-func-gen2": "gcloud functions deploy node20-echo-gen2 --gen2 --runtime=nodejs20 --region=europe-west3 --source=./functions/ --entry-point=echo --trigger-http --allow-unauthenticated",
+    "deploy-node16-gae": "gcloud app deploy -q ./app-node16.yaml",
+    "deploy-node18-gae": "gcloud app deploy -q ./app-node18.yaml",
+    "deploy-node20-gae": "gcloud app deploy -q ./app-node20.yaml"
+  },
+  "author": "tsmx <dev@tsmx.net>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.47.0"
+  },
+  "keywords": [
+    "GCP",
+    "cloud functions",
+    "app engine",
+    "env"
+  ]
+}
