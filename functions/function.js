@@ -1,1 +1,7 @@
-module.exports.echo = (req, res) => { res.json(process.env); };
+module.exports.echo = (req, res) => {
+    let result = process.env;
+    if (result.S2A_ACCESS_TOKEN) {
+        result.S2A_ACCESS_TOKEN = 'xxxx';
+    }
+    res.json(result);
+};
