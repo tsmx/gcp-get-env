@@ -1,4 +1,4 @@
-module.exports.echo = (req, res) => {
+module.exports.getEnv = (req, res) => {
     let result = process.env;
     if (result.S2A_ACCESS_TOKEN) {
         result.S2A_ACCESS_TOKEN = 'xxxx';
