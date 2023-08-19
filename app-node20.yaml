@@ -1,4 +1,4 @@
-service: node20
+service: node20-get-env
 runtime: nodejs20
 instance_class: F1
 automatic_scaling:

@@ -1,4 +1,4 @@
-service: node16
+service: node16-get-env
 runtime: nodejs16
 instance_class: F1
 automatic_scaling:
