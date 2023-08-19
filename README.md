@@ -40,7 +40,7 @@ The project ships with `npm run` scripts to deploy publicly available endpoints 
 
 The output of the gcloud command will show you the URL of the deployed function/service to be called.
 
-To help you being preotected from unwanted expenses (keep in minde the endpoints will be publicly available!), the deployments will use an maxConcurrency of 1 for the cloud functions and the smallest instance type F1 with a count of 1 for the app engine services.
+To help you being protected from unwanted expenses (keep in mind the endpoints will be **publicly available**!), the deployments will use an maxConcurrency of 1 for the cloud functions and the smallest instance type F1 with a count of 1 for the app engine services.
 
 ## Provided endpoints
 
