@@ -28,15 +28,15 @@ The project ships with `npm run` scripts to deploy publicly available endpoints 
 
 |script name|deploys|function/service name|
 |-----------|-------|---------------------|
-|`deploy-node16-func`| cloud function with runtime Node.js 16 Gen 1|`node16-get-env`|
-|`deploy-node16-func-gen2`| cloud function with runtime Node.js 16 Gen 2|`node16-gen2-get-env`|
-|`deploy-node18-func`| cloud function with runtime Node.js 18 Gen 1|`node18-get-env`|
-|`deploy-node18-func-gen2`| cloud function with runtime Node.js 18 Gen 2|`node18-gen2-get-env`|
-|`deploy-node20-func`| cloud function with runtime Node.js 20 Gen 1|`node20-get-env`|
-|`deploy-node20-func-gen2`| cloud function with runtime Node.js 20 Gen 2|`node20-gen2-get-env`|
-|`deploy-node16-gae`| app engine service  with runtime Node.js 16 Gen 1|`node16-get-env`|
-|`deploy-node18-gae`| cloud function with runtime Node.js 16 Gen 1|`node18-get-env`|
-|`deploy-node20-gae`| cloud function with runtime Node.js 16 Gen 1|`node20-get-env`|
+|`deploy-node16-func`|cloud function with runtime Node.js 16 Gen 1|`node16-get-env`|
+|`deploy-node16-func-gen2`|cloud function with runtime Node.js 16 Gen 2|`node16-gen2-get-env`|
+|`deploy-node18-func`|cloud function with runtime Node.js 18 Gen 1|`node18-get-env`|
+|`deploy-node18-func-gen2`|cloud function with runtime Node.js 18 Gen 2|`node18-gen2-get-env`|
+|`deploy-node20-func`|cloud function with runtime Node.js 20 Gen 1|`node20-get-env`|
+|`deploy-node20-func-gen2`|cloud function with runtime Node.js 20 Gen 2|`node20-gen2-get-env`|
+|`deploy-node16-gae`|app engine service  with runtime Node.js 16|`node16-get-env`|
+|`deploy-node18-gae`|app engine service  with runtime Node.js 18|`node18-get-env`|
+|`deploy-node20-gae`|app engine service  with runtime Node.js 20|`node20-get-env`|
 
 The output of the gcloud command will show you the URL of the deployed function/service to be called.
 
