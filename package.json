@@ -5,13 +5,11 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
-    "deploy-node16-func": "gcloud functions deploy node16-get-env --runtime=nodejs16 --max-instances=1 --region=europe-west3 --source=./functions/ --entry-point=getEnv --trigger-http --allow-unauthenticated --docker-registry=artifact-registry",
-    "deploy-node16-func-gen2": "gcloud functions deploy node16-gen2-get-env --gen2 --runtime=nodejs16 --max-instances=1 --region=europe-west3 --source=./functions/ --entry-point=getEnv --trigger-http --allow-unauthenticated",
     "deploy-node18-func": "gcloud functions deploy node18-get-env --runtime=nodejs18 --max-instances=1 --region=europe-west3 --source=./functions/ --entry-point=getEnv --trigger-http --allow-unauthenticated --docker-registry=artifact-registry",
-    "deploy-node18-func-gen2": "gcloud functions deploy node18-gen2-get-env --gen2 --runtime=nodejs18 --max-instances=1 --region=europe-west3 --source=./functions/ --entry-point=getEnv --trigger-http --allow-unauthenticated",
+    "deploy-node18-func-gen2": "gcloud functions deploy node18-gen2-get-env --runtime=nodejs18 --max-instances=1 --entry-point=getEnv2 --region=europe-west3 --trigger-http --allow-unauthenticated",
     "deploy-node20-func": "gcloud functions deploy node20-get-env --runtime=nodejs20 --max-instances=1 --region=europe-west3 --source=./functions/ --entry-point=getEnv --trigger-http --allow-unauthenticated --docker-registry=artifact-registry",
-    "deploy-node20-func-gen2": "gcloud functions deploy node20-gen2-get-env --gen2 --runtime=nodejs20 --max-instances=1 --region=europe-west3 --source=./functions/ --entry-point=getEnv --trigger-http --allow-unauthenticated",
-    "deploy-node16-gae": "gcloud app deploy -q ./app-node16.yaml",
+    "deploy-node20-func-gen2": "gcloud functions deploy node20-gen2-get-env --runtime=nodejs20 --max-instances=1 --region=europe-west3 --entry-point=getEnv2 --trigger-http --allow-unauthenticated",
+    "deploy-node22-func-gen2": "gcloud functions deploy node22-gen2-get-env --runtime=nodejs22 --max-instances=1 --region=europe-west3 --entry-point=getEnv2 --trigger-http --allow-unauthenticated",
     "deploy-node18-gae": "gcloud app deploy -q ./app-node18.yaml",
     "deploy-node20-gae": "gcloud app deploy -q ./app-node20.yaml",
     "deploy-node22-gae": "gcloud app deploy -q ./app-node22.yaml"
@@ -19,6 +17,7 @@
   "author": "tsmx <dev@tsmx.net>",
   "license": "MIT",
   "dependencies": {
+    "@google-cloud/functions-framework": "^3.4.5",
     "express": "^4.18.2"
   },
   "devDependencies": {
