@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
+    "test": "true",
     "deploy-node18-func": "gcloud functions deploy node18-get-env --runtime=nodejs18 --max-instances=1 --region=europe-west3 --source=./functions/ --entry-point=getEnv --trigger-http --allow-unauthenticated --docker-registry=artifact-registry",
     "deploy-node18-func-gen2": "gcloud functions deploy node18-gen2-get-env --runtime=nodejs18 --max-instances=1 --entry-point=getEnv2 --region=europe-west3 --trigger-http --allow-unauthenticated",
     "deploy-node20-func": "gcloud functions deploy node20-get-env --runtime=nodejs20 --max-instances=1 --region=europe-west3 --source=./functions/ --entry-point=getEnv --trigger-http --allow-unauthenticated --docker-registry=artifact-registry",
